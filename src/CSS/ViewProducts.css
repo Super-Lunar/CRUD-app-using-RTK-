@@ -1,0 +1,46 @@
+/* ViewProduct.css */
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background-color: #f3f0ff; /* Light purple background */
+  padding: 40px;
+}
+
+.product-card {
+  background: white;
+  border : 2px solid purple;
+  border-radius: 20px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  color: white;
+  padding: 40px;
+  width: 400px;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.product-card:hover {
+  transform: translateY(-10px); /* Animation when hovering */
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+}
+
+.product-card img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.product-card p {
+  font-family: "Poppins", sans-serif;
+  font-size: 1.2rem;
+  margin: 10px 0;
+}
+
+.product-card p:first-of-type {
+  font-size: 1.5rem;
+  font-weight: bold;
+}

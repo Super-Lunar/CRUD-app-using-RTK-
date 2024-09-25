@@ -1,0 +1,87 @@
+/* Container to center the form at the top middle */
+.form-container {
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: flex-start; /* Align to the top */
+    min-height: 100vh; /* Full viewport height */
+    padding: 20px; /* Padding to provide some space from edges */
+    background-color: #f4f4f9; /* Light background color for contrast */
+}
+
+/* Card styling */
+.form-card {
+    background-color: white; /* White background for the card */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1); /* Deeper shadow */
+    padding: 30px; /* Padding inside the card */
+    width: 100%;
+    max-width: 600px; /* Maximum width of the card */
+    margin-top: 20px; /* Space from the top of the viewport */
+}
+
+/* Form styling */
+.form-card form {
+    display: flex;
+    flex-direction: column; /* Stack input fields vertically */
+    gap: 20px; /* Space between form elements */
+}
+
+/* Label styling */
+.form-card label {
+    display: block; /* Block-level labels */
+    margin-bottom: 8px; /* Spacing between label and input */
+    font-weight: 600; /* Slightly bolder label */
+    font-size: 16px; /* Font size for label */
+    color: #333; /* Dark text color for better readability */
+}
+
+/* Input field styling */
+.form-card input {
+    width: 100%; /* Full width input */
+    padding: 12px; /* Padding inside the input */
+    border: 1px solid #ddd; /* Light border */
+    border-radius: 8px; /* Rounded corners */
+    font-size: 16px; /* Font size for input text */
+    box-sizing: border-box; /* Include padding and border in the element’s total width and height */
+    transition: border-color 0.3s ease, box-shadow 0.3s ease; /* Smooth transitions */
+}
+
+/* Input focus effect */
+.form-card input:focus {
+    border-color: #8e44ad; /* Purple border on focus */
+    box-shadow: 0 0 0 3px rgba(142, 68, 173, 0.2); /* Custom focus shadow */
+    outline: none; /* Remove default outline */
+}
+
+/* Error message styling */
+.form-card .error {
+    color: red; /* Red color for error messages */
+    font-size: 14px; /* Slightly smaller font size for error messages */
+    margin-top: 5px; /* Spacing above the error message */
+}
+
+/* Button styling */
+.form-card .button {
+    text-align: center; /* Center align the button */
+}
+
+.form-card .button button {
+    background-color: #8e44ad; /* Purple background */
+    color: white; /* White text */
+    border: none; /* Remove default border */
+    border-radius: 8px; /* Rounded corners */
+    padding: 12px 24px; /* Spacing inside the button */
+    font-size: 16px; /* Font size for the button */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background-color 0.3s ease, box-shadow 0.3s ease; /* Smooth transitions */
+}
+
+.form-card .button button:hover {
+    background-color: #9b59b6; /* Lighter purple on hover */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Shadow on hover */
+}
+
+.form-card .button button:active {
+    background-color: #6c3483; /* Darker purple when clicked */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Shadow gets smaller */
+}

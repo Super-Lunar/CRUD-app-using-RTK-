@@ -1,0 +1,21 @@
+.NavBar {
+  background: linear-gradient(90deg, #b300ff, #c400fa84);
+  padding: 15px 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+.NavBar a {
+  color: white;
+  text-decoration: none;
+  margin-left: 20px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+ 
+}
+
+.NavBar a:hover {
+  color: black;
+  transition: color 0.3s ease-in-out;
+}

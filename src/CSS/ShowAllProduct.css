@@ -1,0 +1,59 @@
+/* ShowAllProduct.css */
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: #f3f0ff; /* Light purple background */
+    padding: 20px;
+  }
+  
+  .card {
+    background: rgba(255, 255, 255, 0.459); /* Purple gradient */
+    border: 1px solid purple;
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    color: white;
+    padding: 20px;
+    margin: 20px;
+    width: 300px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .card:hover {
+    transform: translateY(-10px); /* Animation when hovering */
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+  }
+  
+  .card p {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1rem;
+  }
+  
+  button {
+    background-color: #9333ea; /* Purple button color */
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    margin: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-family: 'Poppins', sans-serif;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+  }
+  
+  button:hover {
+    background-color: #7b2cbf; /* Darker purple on hover */
+    transform: scale(1.05); /* Slight zoom-in on hover */
+  }
+  
+  button:active {
+    transform: scale(0.95); /* Slight zoom-out on click */
+  }
+  
+  .container p {
+    color: black;
+  }
